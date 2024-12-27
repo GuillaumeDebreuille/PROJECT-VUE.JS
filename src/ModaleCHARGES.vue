@@ -8,8 +8,7 @@
         <div class="modale">
             <div class="tittle">Créer un Cahier des charges </div>
             <button @click="toggleModaleObjectifCHARGES">L'objectif</button>
-            <button @click="toggleModaleBigCHARGES"><img src="./assets/CV.png" alt=""></button>
-            <a href="https://github.com/GuillaumeDebreuille/CV_Guillaume.git" target="_blank">Lien GitHub</a>
+            <button @click="toggleModaleBigCHARGES"><img src="./assets/charges.png" alt="Cahier des charges"></button>
         </div>
     </div>
 </template>

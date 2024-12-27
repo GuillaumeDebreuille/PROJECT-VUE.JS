@@ -22,7 +22,7 @@
             </div>
 
             <div class="container">
-                <p>Dynamiser un éspace commentaires </p>
+                <p>Dynamiser un espace commentaires </p>
                 <button @click="toggleModaleCOM" class="modaleCOM">
                     <img src="./assets/COM.png" alt="Dynamiser un espace commentaire">
                 </button>

@@ -1,23 +1,19 @@
 <template>
-    <div class="blocModale" v-if="reveleObjectifCHARGES">
+    <div class="blocModale" v-if="reveleObjectifCOM">
 
-        <div class="overlay" @click="toggleModaleObjectifCHARGES"></div>
+        <div class="overlay" @click="toggleModaleObjectifCOM"></div>
         
         <div class="modale">
-            <button @click="toggleModaleObjectifCHARGES" class="buttonModale">x</button>
+            <button @click="toggleModaleObjectifCOM" class="buttonModale">x</button>
             <div class="text"> 
                 <h1>Les objectifs</h1>
-                <h2>Notre client souhaite créer un site web pour vendre en ligne des chaussettes dépareillées fait 
-                    main. </h2>
-                <h2>J'ai du construire un cahier des charges répondant à ses besoins</h2>
+                <h2>Un fichier HTML nous est déjà donné</h2>
+                <h2>Lui apporter des modifications pour : </h2>
 
                 <ul>
-                    <li>Planifier et suivre les tâches de développement</li>
-                    <li>Améliorer le site et remédier aux vulnérabilités détectées </li>
-                    <li>Rechercher des informations sur des sites Internet, des forums et des FAQ francophones ou anglophones</li>
-                    <li>Construire la structure du site</li>
-                    <li>Rechercher une réponse pertinente à une difficulté technique de rendu et d’accessibilité</li>
-                    <li>Respecter les règles orthographiques et grammaticales lors de la rédaction de documents</li>
+                    <li>Vérifier que tous les champs ne sont pas vides, si l'un est vide : afficher le message d'erreur déjà présent dans le HTML (caché par défaut)</li>
+                    <li>Ajouter le contenu de ce formulaire dans un nouveau commentaire au sein de la liste déjà présente</li>
+                    <li>Supprimer le contenu des champs du formulaire une fois le nouveau commentaire affiché dans la liste</li>
                 </ul>
 
             </div>
@@ -28,8 +24,8 @@
 
 <script>
     export default {
-        name: 'ModaleObjectifCHARGES',
-        props: ['reveleObjectifCHARGES', 'toggleModaleObjectifCHARGES']
+        name: 'ModaleObjectifCOM',
+        props: ['reveleObjectifCOM', 'toggleModaleObjectifCOM']
     }
 </script>
 
