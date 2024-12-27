@@ -1,26 +1,30 @@
 <template>
-    <ModaleCV v-bind:revele="revele" v-bind:toggleModale="toggleModale"/>
+    <ModaleCV :reveleCV="reveleCV" :toggleModaleCV="toggleModaleCV"/>
+    <ModaleCHARGES :reveleCHARGES="reveleCHARGES" :toggleModaleCHARGES="toggleModaleCHARGES"/>
+    <ModaleCOM :reveleCOM="reveleCOM" :toggleModaleCOM="toggleModaleCOM"/>
+
     <h1>Mes projets ss</h1>
         <div class="containers">
 
             <div class="container">
                 <p>Créer un CV</p>
-                <button @click="toggleModale" class="modaleCV">
+                <button @click="toggleModaleCV" class="modaleCV">
                     <img src="./assets/CV.png" alt="CV" title="CV">
                 </button>
             </div>
             
             <div class="container">
                 <p>Cahier des charges</p>
-                <button>
-               
+                <button @click="toggleModaleCHARGES" class="modaleCHARGES">
+                    <img src="./assets/Socketterie.png" alt="Cahier des charges">
                 </button>
+
             </div>
 
             <div class="container">
                 <p>Dynamiser un éspace commentaires </p>
-                <button>
-                
+                <button @click="toggleModaleCOM" class="modaleCOM">
+                    <img src="./assets/COM.png" alt="Dynamiser un espace commentaire">
                 </button>
             </div>
         </div>
@@ -54,22 +58,37 @@
 
 
 <script>
+    import ModaleCHARGES from './ModaleCHARGES.vue';
+    import ModaleCOM from './ModaleCOM.vue';
     import ModaleCV from './ModaleCV.vue';
+
     export default {
         name: 'Home',
         data() {
             return {
-                revele: false
+                reveleCV: false,
+                reveleCHARGES: false,
+                reveleCOM: false,
             }
         },
         components: {
-            ModaleCV
+            ModaleCV,
+            ModaleCHARGES,
+            ModaleCOM,
         },
+
+
         methods: {
-            toggleModale: function() {
-                this.revele = !this.revele
-            }
-        },
+            toggleModaleCV: function() {
+                this.reveleCV = !this.reveleCV
+            },
+            toggleModaleCHARGES: function() {
+                this.reveleCHARGES = !this.reveleCHARGES       
+            },
+            toggleModaleCOM: function() {
+                this.reveleCOM = !this.reveleCOM
+            },
+        }
     }
 </script>
 
@@ -80,19 +99,26 @@
         display: flex;
         padding: 5px;
         
+        
+        
     }
     .container {
         background-color: rgb(218, 144, 49);
         gap: 5px;
         width: 33%;
+        height: 250px;
         padding: 5px;
         margin: 5px;
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         color: white;
     }
+
+
+    
     .modaleCV img {
         height: 200px;
         width: auto;
@@ -105,6 +131,42 @@
         opacity: 60%;
     }
     .modaleCV {
+        background-color: rgb(218, 144, 49);
+        border: none;
+    }
+
+
+
+    .modaleCHARGES img {
+        height: 120px;
+        width: auto;
+    }
+    .modaleCHARGES img:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+    .modaleCHARGES img:active {
+        opacity: 60%;
+    }
+    .modaleCHARGES {
+        background-color: rgb(218, 144, 49);
+        border: none;
+    }
+
+
+
+    .modaleCOM img {
+        height: 120px;
+        width: auto;
+    }
+    .modaleCOM img:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+    .modaleCOM img:active {
+        opacity: 60%;
+    }
+    .modaleCOM {
         background-color: rgb(218, 144, 49);
         border: none;
     }

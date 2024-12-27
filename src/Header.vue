@@ -5,9 +5,9 @@
         <div class="buttons">
             <button @click="goToHome">Accueil</button>
             <button @click="goToForm">Formulaire de contact</button>
-            <button @click="goToAutre">Autre</button>
-            <button @click="goToAutre">Autre</button>
-            <button @click="goToConnection">Mon compte</button>
+            <button @click="goToProject1">Projet 1</button>
+            <button @click="goToProject2">Projet 2</button>
+            <button @click="goToProject3">Projet 3</button>
         </div>
     </header>
     </div>
@@ -20,17 +20,20 @@
 
     const router = useRouter();
 
-    function goToConnection() {
-        router.push('/connection');
-    }
     function goToHome() {
         router.push({name:'App'}) 
     }
     function goToForm() {
         router.push('/form')
     }
-    function goToAutre() {
-        router.push('/404')
+    function goToProject1() {
+        router.push('/project1')
+    }
+    function goToProject2() {
+        router.push('/project2')
+    }
+    function goToProject3() {
+        router.push('/project3')
     }
 </script>
 

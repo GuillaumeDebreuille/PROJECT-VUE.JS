@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
-import Connection from './Connection.vue';
 import Home from './Home.vue';
 import Form from './Form.vue';
 import Autre from './Autre.vue';
@@ -17,20 +16,15 @@ const routes = [
         component: Home
     },
     {
-        path: '/connection',
-        name: 'Connection',
-        component: Connection
-    },
-    {
         path: '/form',
         name: 'Form',
         component: Form 
     },
     {
-        path: '/404',
-        name: 'Autre',
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
         component: Autre
-    },
+    }
 
     
 ];

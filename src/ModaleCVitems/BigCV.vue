@@ -1,13 +1,11 @@
-<!-- Modale  -->
-
 <template>
-    <div class="blocModale" v-if="revele">
+    <div class="blocModale" v-if="reveleBigCV">
 
-        <div class="overlay" @click="toggleModale"></div>
+        <div class="overlay" @click="toggleModaleBigCV"></div>
         
         <div class="modale">
-            <button @click="toggleModale" class="buttonModale">x</button>
-            <h2>Merci pour votre message !</h2>
+            <button @click="toggleModaleBigCV" class="buttonModale">x</button>
+            <img src="../assets/CV.png" alt="CV">
         </div>
 
     </div>
@@ -15,8 +13,8 @@
 
 <script>
     export default {
-        name: 'ModaleForm',
-        props: ['revele', 'toggleModale']
+        name: 'ModaleBigCV',
+        props: ['reveleBigCV', 'toggleModaleBigCV']
     }
 </script>
 
@@ -31,6 +29,8 @@
         display: flex;
         justify-content: center;
         align-items: center; 
+
+        z-index: 20;
     }
     .overlay {
         background-color: rgba(0, 0, 0, 0.5);
@@ -43,10 +43,20 @@
     .modale {
         background-color: #f1f1f1;
         color: #333;
-        padding: 50px;
+        padding: 2%;
+        
         position: fixed;
-        top: 30%;
+        top: 5%;
         border-radius: 10px;
+        width: auto;
+        height: 85%;
+
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: auto;
+        height: 90%;
     }
     .buttonModale {
         position: absolute;
