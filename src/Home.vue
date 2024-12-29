@@ -3,7 +3,15 @@
     <ModaleCHARGES :reveleCHARGES="reveleCHARGES" :toggleModaleCHARGES="toggleModaleCHARGES"/>
     <ModaleCOM :reveleCOM="reveleCOM" :toggleModaleCOM="toggleModaleCOM"/>
 
-    <h1>Mes projets ss</h1>
+    <div class="text">
+        <h2>Je m'appelle Guillaume Debreuille et je suis en formation pour devenir développeur web</h2>
+        <div>Après avoir obtenu une licence « Responsable de développement commercial option assurance », je me suis vite rendu compte que ce type de métiers ne m’étaient pas destinées.</div>
+        <div>Tout commence avec une formation gratuite d’un site tiers. Il proposait d’apprendre les bases de la création d’un site web en utilisant HTML et CSS. Après plusieurs semaines d’amusement, je me suis dit, « et pourquoi pas ? ». C’est donc comme ça que je me suis lancé dans cette aventure.</div>
+        <div>Mon objectif est de passer 15h par semaines sur ma formation, en parallèle de mes 37h en CDI. J’espère pouvoir la terminer Juin-Juillet et ainsi commencer un nouveau chapitre de ma vie professionnelle.</div>
+    </div>    
+    
+    <div class="projects">
+        <h2>Mes projets :</h2>
         <div class="containers">
 
             <div class="container">
@@ -28,29 +36,8 @@
                 </button>
             </div>
         </div>
-   
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda consequatur laboriosam accusamus tempora sapiente, quam nam esse odit, ea ratione beatae harum possimus, at nulla nobis magnam. Laudantium, ullam.
-        Sint non voluptatum beatae sit quia sequi suscipit, exercitationem magnam vero impedit, ipsum nihil libero adipisci omnis deserunt obcaecati provident illum esse corporis in minima dolor assumenda soluta. Quibusdam, ea.
-        Architecto consequatur fuga ut eligendi quae maxime nihil natus, voluptas fugiat eum facere quaerat eius id odio doloremque error vel recusandae rem at voluptate soluta repellat. Officiis distinctio dolor ex.
-        Ipsa corporis obcaecati voluptatem voluptatibus optio animi numquam illo consequatur adipisci, praesentium repellendus at sapiente reiciendis suscipit quod eos possimus iste impedit recusandae distinctio itaque! Sed blanditiis quos architecto. Voluptatem?
-        Earum molestiae eum dolorem quas aut dolore laudantium ipsa eveniet iusto? A, ipsum deleniti. Id repudiandae accusantium provident nihil! Architecto nihil atque dolores libero iste facere sunt odio quibusdam error.
-        Odio nobis inventore molestiae distinctio non animi vel illo optio voluptatem repudiandae cum, voluptates temporibus ipsam eveniet corrupti laudantium amet tenetur blanditiis nostrum ex voluptatibus? Labore accusamus ab soluta minus.
-        Adipisci unde aliquam suscipit, quaerat facere reiciendis aspernatur veniam molestias delectus quia. Architecto vero sint officiis commodi modi voluptatem doloribus, atque laborum qui non ex molestiae fugiat. Dolorem, facere ducimus.
-        Facere odio odit sed quas illum, officia esse dicta laboriosam quam a! Quos quam sit, non, alias similique quibusdam laborum consequatur hic commodi dicta officia, illum minima ad expedita itaque!
-        Quo reiciendis neque quae atque, vero suscipit voluptatem quia deserunt, sunt voluptatibus optio saepe, nesciunt exercitationem! Voluptatibus iste nam delectus nisi, molestiae, quae quam officia praesentium ducimus non, laborum quisquam!
-        Itaque, doloribus debitis. Voluptate sapiente laboriosam esse, aspernatur perferendis natus pariatur inventore totam hic magni aperiam, eveniet nobis accusamus excepturi? Praesentium est, odio quaerat voluptatem incidunt rem obcaecati nemo. Voluptates.
-        Rem animi optio distinctio deleniti numquam magni molestiae? Delectus ea assumenda blanditiis nobis eius ab, nemo porro omnis est. Praesentium optio voluptatibus qui rerum. Voluptatem iusto optio cum amet non!
-        Omnis aperiam distinctio fugiat possimus optio nesciunt numquam illum doloremque molestiae suscipit neque tempore, corporis alias provident voluptatem quod praesentium adipisci! Doloremque, nulla beatae aperiam nesciunt unde aut optio impedit.
-        Eius, cupiditate corrupti. Possimus porro quo cum deserunt temporibus officia, tenetur eaque atque sed saepe nulla nemo ullam eos! Obcaecati pariatur nobis vitae ipsam ad libero quis impedit sed harum!
-        Illum maiores ipsum eligendi omnis atque, provident voluptate facilis suscipit fuga alias optio, mollitia quas neque, fugit quibusdam sequi? Iure ullam quam facere voluptate atque sint, esse sunt totam soluta!
-        Qui explicabo dolores earum vero culpa aliquam officiis incidunt quia quam iusto distinctio omnis hic nobis animi, quod dolorum perferendis nostrum nam perspiciatis mollitia pariatur ipsam suscipit ratione? Alias, odio.
-        Debitis, provident iure esse quibusdam iste aliquam, cum quia maiores molestiae eius vel labore repudiandae sunt perspiciatis sequi repellat. In at, iure nobis dolor magni explicabo consequatur temporibus quaerat praesentium.
-        Nostrum est dolorum ratione molestias sint similique officia perferendis eos suscipit eum, voluptates accusamus quae magni ab fugiat quasi modi, praesentium assumenda, non provident? Ipsam optio suscipit consequuntur voluptatibus et.
-        Eveniet, minima laudantium! Voluptates, quibusdam temporibus. At, nihil illo dolore, voluptatem quaerat laboriosam libero sequi atque deleniti obcaecati officiis doloribus dolorem. Voluptatum ut nulla quasi ipsa consequatur tempore asperiores enim.
-        Voluptatibus corporis a labore. Amet numquam fuga minus ipsum quia neque id perspiciatis iusto quisquam? Cum, consectetur dignissimos molestiae, voluptate quidem corporis necessitatibus nobis ipsa minima atque asperiores eos rem.
-        Ea iure, ducimus, necessitatibus non error quidem saepe esse atque autem in porro doloribus veritatis unde dolor earum ratione, maxime voluptatum! Necessitatibus non vitae blanditiis fuga quidem impedit, debitis et!
     </div>
+    <div class="spacer"></div>
     
     
 </template>
@@ -98,9 +85,6 @@
     .containers {
         display: flex;
         padding: 5px;
-        
-        
-        
     }
     .container {
         background-color: rgb(218, 144, 49);
@@ -115,10 +99,39 @@
         justify-content: center;
         text-align: center;
         color: white;
+        border-radius: 10px;
+    }
+    .spacer {
+        height: 250px;
+    }
+    .text {
+        background-color: rgb(201, 201, 201);
+        width: 92%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 2%;
+        border: solid black 1px;
+        border-radius: 10px;
+    }
+    .text div {
+        padding-top: 10px;
+    }
+    .projects {
+        background-color: rgb(201, 201, 201);
+        width: 92%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 2%;
+        border: solid black 1px;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
 
-    
+
     .modaleCV img {
         height: 200px;
         width: auto;

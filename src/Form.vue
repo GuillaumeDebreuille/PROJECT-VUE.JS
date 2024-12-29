@@ -2,10 +2,10 @@
 <template>
     <modaleForm v-bind:revele="revele" v-bind:toggleModale="toggleModale"/>
 
-    <!-- ----- FORMULAIRE DE CONTACT - DEBUT ----- -->
+    
     <div class="form">
         <h1>Formulaire de contact</h1>
-        <form id="contactForm" action="/send-email" method="post">
+        <form id="contactForm" action="/send-email" method="post" @submit.prevent="handleSubmit">
 
             <div class="nameAsubject">
                 <label for="name">Nom/Prénom :</label>
@@ -19,12 +19,12 @@
                 <label for="message">Message :</label>
                 <textarea type="text" name="message" id="message"></textarea><br>
             </div>
-        </form>
-            
-            <button @click="toggleModale" type="submit">Envoyer</button>
-        </div>
+
+            <button type="submit">Envoyer</button>
+        </form>   
+    </div>
     
-<!-- ----- FORMULAIRE DE CONTACT - FIN ----- -->    
+ 
 </template>
 
 
@@ -42,10 +42,13 @@
             'modaleForm': ModaleForm
         },
         methods: {
-            toggleModale: function() {
-                this.revele = !this.revele
-            }
-        }
+        toggleModale() {
+            this.revele = !this.revele;
+        },
+        handleSubmit() {
+            this.toggleModale();
+        },
+    },
     };
 </script>
 
