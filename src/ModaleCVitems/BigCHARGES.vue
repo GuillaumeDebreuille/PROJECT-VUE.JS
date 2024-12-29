@@ -1,3 +1,5 @@
+<!-- Modale CHARGES > Modale qui ouvre le cahier des CH en plus grand-->
+
 <template>
     <div class="blocModale" v-if="reveleBigCHARGES">
 
@@ -11,12 +13,14 @@
     </div>
 </template>
 
+
 <script>
     export default {
         name: 'ModaleBigCHARGES',
         props: ['reveleBigCHARGES', 'toggleModaleBigCHARGES']
     }
 </script>
+
 
 <style scoped>
     .blocModale {

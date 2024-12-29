@@ -1,3 +1,5 @@
+<!-- Modale CV > Modale qui ouvre le CV en plus grand -->
+
 <template>
     <div class="blocModale" v-if="reveleBigCV">
 
@@ -11,12 +13,14 @@
     </div>
 </template>
 
+
 <script>
     export default {
         name: 'ModaleBigCV',
         props: ['reveleBigCV', 'toggleModaleBigCV']
     }
 </script>
+
 
 <style scoped>
     .blocModale {

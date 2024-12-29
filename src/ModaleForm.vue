@@ -1,4 +1,4 @@
-<!-- Modale  -->
+<!-- Modale Formulaire // Merci pour votre message !  -->
 
 <template>
     <div class="blocModale" v-if="revele">

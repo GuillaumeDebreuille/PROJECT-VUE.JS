@@ -1,3 +1,5 @@
+<!-- Modale COM > Modale qui ouvre les COM en plus grand -->
+
 <template>
     <div class="blocModale" v-if="reveleBigCOM">
 
@@ -11,12 +13,14 @@
     </div>
 </template>
 
+
 <script>
     export default {
         name: 'ModaleBigCOM',
         props: ['reveleBigCOM', 'toggleModaleBigCOM']
     }
 </script>
+
 
 <style scoped>
     .blocModale {

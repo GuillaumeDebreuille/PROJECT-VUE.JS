@@ -1,3 +1,5 @@
+<!-- Modale CV > Modale qui ouvre les objectifs du CV -->
+
 <template>
     <div class="blocModale" v-if="reveleObjectifCV">
 
@@ -27,12 +29,14 @@
     </div>
 </template>
 
+
 <script>
     export default {
         name: 'ModaleObjectifCV',
         props: ['reveleObjectifCV', 'toggleModaleObjectifCV']
     }
 </script>
+
 
 <style scoped>
     .blocModale {
@@ -95,29 +99,25 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         max-width: 800px;
         margin: 0 auto;
-      }
-      
-      .text h1 {
+    }
+    .text h1 {
         font-size: 2em;
         color: #333;
         margin-bottom: 20px;
-      }
-      
-      .text h2 {
+    }
+    .text h2 {
         font-size: 1.5em;
         color: #555;
         margin-bottom: 20px;
-      }
-      
-      .text ul {
+    } 
+    .text ul {
         list-style-type: disc;
         padding-left: 20px;
         margin-bottom: 20px;
-      }
-      
-      .text li {
+    }
+    .text li {
         margin-bottom: 10px;
         font-size: 1em;
         color: #666;
-      }
+    }
 </style>

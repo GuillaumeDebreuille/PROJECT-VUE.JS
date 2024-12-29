@@ -13,7 +13,7 @@
             </a>
         </div>
         <div>
-            <p>Dernière mise à jour le <time datetime="2024-12-03">3 décembre 2024</time></p>
+            <p>Dernière mise à jour le <time datetime="2024-12-29">29 décembre 2024</time></p>
         </div>
     </footer>
 </template>

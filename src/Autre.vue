@@ -1,12 +1,12 @@
+<!-- PAGE ERROR 404 -->
+
 <template>
-  
     <div class="error">
         <div class="number">404</div>
         <div class="texte">NOT FOUND</div>
     </div>
 
     <div class="autreSpacer"></div>
-
 </template>
 
 

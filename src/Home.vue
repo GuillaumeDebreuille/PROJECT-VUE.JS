@@ -1,3 +1,5 @@
+<!-- PAGE D'ACCUEIL -->
+
 <template>
     <ModaleCV :reveleCV="reveleCV" :toggleModaleCV="toggleModaleCV"/>
     <ModaleCHARGES :reveleCHARGES="reveleCHARGES" :toggleModaleCHARGES="toggleModaleCHARGES"/>
