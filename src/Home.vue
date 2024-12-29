@@ -45,7 +45,6 @@
 </template>
 
 
-
 <script>
     import ModaleCHARGES from './ModaleCHARGES.vue';
     import ModaleCOM from './ModaleCOM.vue';
@@ -66,7 +65,6 @@
             ModaleCOM,
         },
 
-
         methods: {
             toggleModaleCV: function() {
                 this.reveleCV = !this.reveleCV
@@ -80,7 +78,6 @@
         }
     }
 </script>
-
 
 
 <style scoped>
@@ -186,6 +183,6 @@
         border: none;
     }
 
-   
+
 </style>
 

@@ -13,12 +13,14 @@
     </div>
 </template>
 
+
 <script>
     export default {
         name: 'ModaleForm',
         props: ['revele', 'toggleModale']
     }
 </script>
+
 
 <style scoped>
     .blocModale {
